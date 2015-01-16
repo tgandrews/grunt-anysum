@@ -1,9 +1,7 @@
 # grunt-md5sum
 
 [![Build Status](https://travis-ci.org/monolithed/grunt-md5sum.png)](https://travis-ci.org/monolithed/grunt-md5sum)
-
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-
 [![NPM](https://nodei.co/npm/grunt-md5sum.png?downloads=true)](https://nodei.co/npm/grunt-md5sum/)
 
 
