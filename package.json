@@ -1,0 +1,38 @@
+{
+	"name"   : "grunt-md5sum",
+	"version": "0.0.1",
+	"author" : "Abashkin Alexander <monolithed@gmail.com>",
+	"homepage": "https://github.com/monolithed/grunt-md5sum.git",
+
+	"description": "Calculates and verifies 128-bit MD5 hashes, as described in RFC 1321 like md5sum program",
+
+	"keywords": [ "grunt", "md5sum", "md5", "sum", "hash", "rfc 1321", "file", "path", "folder", "directory" ],
+
+	"man": "README.md",
+
+	"engines": {
+		"node": ">=0.10.28"
+	},
+
+	"repository": {
+		"type": "git",
+		"url" :  "https://github.com/monolithed/grunt-md5sum.git"
+	},
+
+	"bugs": {
+		"url": "https://github.com/monolithed/grunt-md5sum/issues"
+	},
+
+	"devDependencies": {
+		"grunt"                 : "0.4.5",
+		"grunt-contrib-clean"   : "0.6.0",
+		"grunt-contrib-nodeunit": "0.4.1"
+	},
+
+	"licenses": [
+		{
+			"type": "MIT",
+			"url" : "http: //www.opensource.org/licenses/mit-license.php"
+		}
+	]
+}
