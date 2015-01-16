@@ -6,7 +6,8 @@
 
 	"description": "Calculates and verifies 128-bit MD5 hashes, as described in RFC 1321 like md5sum program",
 
-	"keywords": [ "grunt", "md5sum", "md5", "sum", "hash", "rfc 1321", "file", "path", "folder", "directory" ],
+	"keywords": [ "grunt", "md5sum", "md5", "sum",
+		"hash", "rfc 1321", "file", "path", "folder", "directory" ],
 
 	"man": "README.md",
 
@@ -21,6 +22,10 @@
 
 	"bugs": {
 		"url": "https://github.com/monolithed/grunt-md5sum/issues"
+	},
+
+	"scripts": {
+		"test": "grunt test"
 	},
 
 	"devDependencies": {
