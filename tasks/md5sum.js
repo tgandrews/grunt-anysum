@@ -37,7 +37,7 @@ module.exports = function (grunt) {
 				}
 
 				source.push({
-					file: file,
+					name: file,
 					hash: hex
 				});
 			});
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
 			}
 			else {
 				source.forEach(function (file) {
-					output += utils.format('%s  %s\n', file.file, file.hash);
+					output += utils.format('%s  %s\n', file.name, file.hash);
 				});
 			}
 
