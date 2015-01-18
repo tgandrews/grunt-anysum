@@ -11,16 +11,16 @@ var fs    = require('fs'),
 	utils = require('util');
 
 
-var file = function (type, extension) {
-	utils.format('tests/%s/file.%s', type, extension);
+var read_file = function (type, extension) {
+	var file = utils.format('tests/%s/file.%s', type, extension);
 
-	return fs.readFileSync('tests/tmp/file.' + extension, 'utf8')
+	return fs.readFileSync(file, 'utf8')
 };
 
-exports.md5sum = {
+exports.tests = {
 	md5: function (test) {
-		var fixtures = file('tmp', 'md5'),
-			expected = file('expected', 'md5');
+		var fixtures = read_file('tmp', 'md5'),
+			expected = read_file('expected', 'md5');
 
 		test.ok(fixtures === expected);
 
@@ -28,8 +28,8 @@ exports.md5sum = {
 	},
 
 	json: function (test) {
-		var fixtures = file('tmp', 'json'),
-			expected = file('expected', 'json');
+		var fixtures = read_file('tmp', 'json'),
+			expected = read_file('expected', 'json');
 
 		test.ok(fixtures === expected);
 
