@@ -1,11 +1,11 @@
 # grunt-md5sum
 
-[![Build Status](https://travis-ci.org/monolithed/grunt-md5sum.png)](https://travis-ci.org/monolithed/grunt-md5sum)
-[![License](http://img.shields.io/npm/l/object.assign.svg)](LICENSE.txt)
+[![Build Status](https://travis-ci.org/monolithed/grunt-md5sum.svg)](https://travis-ci.org/monolithed/grunt-md5sum)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+[![License](http://img.shields.io/npm/l/object.assign.svg)](LICENSE.txt)
 
 
-[![NPM](https://nodei.co/npm/grunt-md5sum.png?downloads=true)](https://nodei.co/npm/grunt-md5sum/)
+[![NPM](https://nodei.co/npm/grunt-md5sum.svg?downloads=true)](https://nodei.co/npm/grunt-md5sum/)
 
 
 > Calculates and verifies 128-bit MD5 hashes, as described in RFC 1321 like [MD5sum](http://linux.die.net/man/1/md5sum) program
