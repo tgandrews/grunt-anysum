@@ -6,7 +6,9 @@ module.exports = function (grunt) {
 			md5: {
 				files: [
 					{
-						'tests/tmp/file.md5': 'tests/fixtures/**'
+						cwd: 'tests/fixtures/',
+						src: ['**/*'],
+						dest: 'tests/tmp/file.md5'
 					}
 				]
 			},
@@ -20,7 +22,23 @@ module.exports = function (grunt) {
 
 				files: [
 					{
-						'tests/tmp/file.json': 'tests/fixtures/**'
+						cwd: 'tests/fixtures/',
+						src: ['**/*'],
+						dest: 'tests/tmp/file.json'
+					}
+				]
+			},
+
+			only_name: {
+				options: {
+					only_name: true
+				},
+
+				files: [
+					{
+						cwd: 'tests/fixtures/',
+						src: ['**/*'],
+						dest: 'tests/tmp/file.md5.only_name'
 					}
 				]
 			}
@@ -40,5 +58,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
 	grunt.registerTask('default', []);
-	grunt.registerTask('test', ['md5sum', 'nodeunit', 'clean']);
+	grunt.registerTask('test', ['md5sum', 'nodeunit']);
 };

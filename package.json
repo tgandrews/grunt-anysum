@@ -1,6 +1,6 @@
 {
 	"name"   : "grunt-md5sum",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"author" : "Abashkin Alexander <monolithed@gmail.com>",
 	"homepage": "https://github.com/monolithed/grunt-md5sum.git",
 

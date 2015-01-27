@@ -25,12 +25,17 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-md5sum');
 ```
 
-## Path task
+## grunt-md5sum task
 _Run this task with the `grunt md5sum` command._
 
 Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
 
 ### Options
+
+#### only_name
+Type: `Boolean`
+
+Write only the file name instead of an absolute path
 
 #### process
 Type: `Function(/* [ ...{ file, hex } ], [ ...files ] */)`
@@ -99,9 +104,17 @@ path/file.css  d8e8fca2dc0f896fd7cb4cb0031ba249
 ```
 ➜ md5sum -c sum.md5 
 
-public/file.js: OK
-public/file.css: OK
+path/file.js: OK
+path/file.css: OK
 ```
+
+
+### Tests
+
+```
+➜ grunt test 
+```
+
 
 ### Links
 

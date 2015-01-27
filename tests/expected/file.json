@@ -1,10 +1,10 @@
 [
 	{
-		"name": "tests/fixtures/file.css",
+		"file": "/fixtures/file.css",
 		"hash": "5fcf8400077ea9f88d2039c81eabe63d"
 	},
 	{
-		"name": "tests/fixtures/file.js",
+		"file": "/fixtures/file.js",
 		"hash": "8515d9ad279c8115b48fc796a9b1a3a3"
 	}
 ]

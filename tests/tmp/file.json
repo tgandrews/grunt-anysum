@@ -1,0 +1,10 @@
+[
+	{
+		"file": "/Users/Abashkin/workspace/github/grunt-md5sum/tests/fixtures/file.css",
+		"hash": "5fcf8400077ea9f88d2039c81eabe63d"
+	},
+	{
+		"file": "/Users/Abashkin/workspace/github/grunt-md5sum/tests/fixtures/file.js",
+		"hash": "8515d9ad279c8115b48fc796a9b1a3a3"
+	}
+]
