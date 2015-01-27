@@ -64,7 +64,9 @@ module.exports = function (grunt) {
 			build: {
 				files: [
 					{
-						'sum.md5': ['folder/**/*', 'files/**/*.{js,css}']
+						cwd : 'files/',
+						src : ['**/*.{js,css}'],
+						dest: 'sum.md5'
 					}
 				]
 			}
