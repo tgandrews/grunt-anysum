@@ -62,7 +62,7 @@ module.exports = function (grunt) {
 			}
 			else {
 				source.forEach(function (file) {
-					output += utils.format('%s  %s\n', file.file, file.hash);
+					output += utils.format('%s  %s\n', file.hash, file.file);
 				});
 			}
 

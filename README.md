@@ -101,9 +101,8 @@ This task supports all the file mapping format Grunt supports. Please read [Glob
 ##### Output file
 
 ```
-path/file.js  d8e8fca2dc0f896fd7cb4cb0031ba248
-path/file.css  d8e8fca2dc0f896fd7cb4cb0031ba249
-
+d8e8fca2dc0f896fd7cb4cb0031ba248  path/file.js
+d8e8fca2dc0f896fd7cb4cb0031ba249  path/file.css
 ```
 
 ##### Verify files with md5sum command 
