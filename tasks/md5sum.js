@@ -42,8 +42,16 @@ module.exports = function (grunt) {
 					grunt.fail.warn('Can not sum for ' + file);
 				}
 
+				if (options.exclude_path) {
+					file = name;
+				}
+
+				if (options.path_prefix) {
+					file = options.path_prefix + file;
+				}
+
 				source.push({
-					file: options.only_name ? name : file,
+					file: file,
 					hash: hex
 				});
 			});

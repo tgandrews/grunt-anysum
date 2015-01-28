@@ -32,10 +32,15 @@ Task targets, files and options may be specified according to the grunt [Configu
 
 ### Options
 
-#### only_name
+#### exclude_path
 Type: `Boolean`
 
-Write only the file name instead of an absolute path
+Exclude an absolute path
+
+#### path_prefix
+Type: `Boolean`
+
+Append a path prefix
 
 #### process
 Type: `Function(/* [ ...{ file, hex } ], [ ...files ] */)`

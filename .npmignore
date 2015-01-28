@@ -112,5 +112,5 @@ ehthumbs.db
 Thumbs.db
 Icon?
 .coveralls.yml
-/tmp
-/cache
+tmp
+cache

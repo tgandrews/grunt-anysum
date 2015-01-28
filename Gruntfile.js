@@ -13,6 +13,35 @@ module.exports = function (grunt) {
 				]
 			},
 
+			'md5.exclude_path': {
+				options: {
+					exclude_path: true
+				},
+
+				files: [
+					{
+						cwd: 'tests/fixtures/',
+						src: ['**/*'],
+						dest: 'tests/tmp/file.md5.exclude_path'
+					}
+				]
+			},
+
+			'md5.prefix': {
+				options: {
+					exclude_path: true,
+					path_prefix : '/'
+				},
+
+				files: [
+					{
+						cwd: 'tests/fixtures/',
+						src: ['**/*'],
+						dest: 'tests/tmp/file.md5.prefix'
+					}
+				]
+			},
+
 			json: {
 				options: {
 					process: function (content) {
@@ -25,20 +54,6 @@ module.exports = function (grunt) {
 						cwd: 'tests/fixtures/',
 						src: ['**/*'],
 						dest: 'tests/tmp/file.json'
-					}
-				]
-			},
-
-			only_name: {
-				options: {
-					only_name: true
-				},
-
-				files: [
-					{
-						cwd: 'tests/fixtures/',
-						src: ['**/*'],
-						dest: 'tests/tmp/file.md5.only_name'
 					}
 				]
 			}

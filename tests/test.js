@@ -7,44 +7,22 @@
 
 'use strict';
 
-var fs    = require('fs'),
-	utils = require('util');
-
-
-var read_file = function (type, extension) {
-	var file = utils.format('tests/%s/file.%s', type, extension);
-		file = fs.readFileSync(file, 'utf8');
-
-	var path = new RegExp(__dirname, 'g');
-
-	return file.replace(path, '');
-};
+var utils = require('./utils.js');
 
 exports.tests = {
 	md5: function (test) {
-		var fixtures = read_file('tmp', 'md5'),
-			expected = read_file('expected', 'md5');
-
-		test.ok(fixtures === expected);
-
-		test.done();
+		utils.test_plan(test, 'md5');
 	},
 
-	'md5.only_name': function (test) {
-		var fixtures = read_file('tmp', 'md5.only_name'),
-			expected = read_file('expected', 'md5.only_name');
+	'md5.exclude_path': function (test) {
+		utils.test_plan(test, 'md5.exclude_path');
+	},
 
-		test.ok(fixtures === expected);
-
-		test.done();
+	'md5.prefix': function (test) {
+		utils.test_plan(test, 'md5.prefix');
 	},
 
 	json: function (test) {
-		var fixtures = read_file('tmp', 'json'),
-			expected = read_file('expected', 'json');
-
-		test.ok(fixtures === expected);
-
-		test.done();
+		utils.test_plan(test, 'json');
 	}
 };
