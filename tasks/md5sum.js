@@ -31,15 +31,24 @@ module.exports = function (grunt) {
 					throw new Error('Could not resolve the current path');
 				}
 
-				var read = fs.readFileSync(file),
-					hash = crypto.createHash('md5');
+				if (!grunt.file.isFile(file)) {
+					return 0;
+				}
 
-				hash.update(read);
+				try {
+					var read = fs.readFileSync(file),
+						hash = crypto.createHash('md5');
 
-				var hex = hash.digest('hex');
+					hash.update(read);
 
-				if (!hex) {
-					grunt.fail.warn('Can not sum for ' + file);
+					var hex = hash.digest('hex');
+
+					if (!hex) {
+						grunt.fail.warn('Can not sum for ' + file);
+					}
+				}
+				catch (error) {
+					throw new Error('Could not read the files\n' + error);
 				}
 
 				if (options.exclude_path) {
