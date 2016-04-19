@@ -24,5 +24,9 @@ exports.tests = {
 
 	json: function (test) {
 		utils.test_plan(test, 'json');
+	},
+
+	sha256: function (test) {
+		utils.test_plan(test, 'sha256');
 	}
 };

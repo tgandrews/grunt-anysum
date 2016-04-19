@@ -56,6 +56,19 @@ module.exports = function (grunt) {
 						dest: 'tests/tmp/file.json'
 					}
 				]
+			},
+
+			sha256: {
+				options: {
+					algorithm: 'sha256'
+				},
+				files: [
+					{
+						cwd: 'tests/fixtures/',
+						src: ['**/*'],
+						dest: 'tests/tmp/file.sha256'
+					}
+				]
 			}
 		},
 

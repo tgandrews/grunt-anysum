@@ -37,11 +37,12 @@ module.exports = function (grunt) {
 
 				try {
 					var read = fs.readFileSync(file),
-						hash = crypto.createHash('md5');
+						hash = crypto.createHash(options.algorithm || 'md5');
 
 					hash.update(read);
 
 					var hex = hash.digest('hex');
+					console.log(file, options.algorithm, hex);
 
 					if (!hex) {
 						grunt.fail.warn('Can not sum for ' + file);
