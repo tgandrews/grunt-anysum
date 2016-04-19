@@ -1,14 +1,6 @@
-# grunt-md5sum
+# grunt-anysum
 
-[![Build Status](https://travis-ci.org/monolithed/grunt-md5sum.svg)](https://travis-ci.org/monolithed/grunt-md5sum)
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-[![License](http://img.shields.io/npm/l/object.assign.svg)](LICENSE.txt)
-
-
-[![NPM](https://nodei.co/npm/grunt-md5sum.svg?downloads=true)](https://nodei.co/npm/grunt-md5sum/)
-
-
-> Calculates and verifies 128-bit MD5 hashes, as described in RFC 1321 like [MD5sum](http://linux.die.net/man/1/md5sum) program
+Based on grunt-md5sum
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -41,6 +33,11 @@ Exclude an absolute path
 Type: `Boolean`
 
 Append a path prefix
+
+#### algorithm
+Type: `String`
+
+The hashing algorithm to use. Defaults to md5.
 
 #### process
 Type: `Function(/* [ ...{ file, hex } ], [ ...files ] */)`
@@ -105,10 +102,10 @@ d8e8fca2dc0f896fd7cb4cb0031ba248  path/file.js
 d8e8fca2dc0f896fd7cb4cb0031ba249  path/file.css
 ```
 
-##### Verify files with md5sum command 
+##### Verify files with md5sum command
 
 ```
-➜ md5sum -c sum.md5 
+➜ md5sum -c sum.md5
 
 path/file.js: OK
 path/file.css: OK
@@ -118,7 +115,7 @@ path/file.css: OK
 ### Tests
 
 ```
-➜ grunt test 
+➜ grunt test
 ```
 
 
