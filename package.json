@@ -1,43 +1,42 @@
 {
-	"name"   : "grunt-md5sum",
-	"version": "2.0.1",
-	"author" : "Abashkin Alexander <monolithed@gmail.com>",
-	"homepage": "https://github.com/monolithed/grunt-md5sum.git",
+    "name": "grunt-anysum",
+    "version": "1.0.0",
+    "author": "Tom Andrews <git@tomandrews.co.uk>",
+    "homepage": "https://github.com/tgandrews/grunt-anysum",
 
-	"description": "Calculates and verifies 128-bit MD5 hashes, as described in RFC 1321 like md5sum program",
+    "description": "Based on grunt-md5sum to calculate file hashes",
 
-	"keywords": [ "grunt", "md5sum", "md5", "sum",
-		"hash", "rfc 1321", "file", "path", "folder", "directory" ],
+    "keywords": ["grunt", "md5sum", "md5", "sum",
+        "hash", "rfc 1321", "file", "path", "folder", "directory", "sha256", "sha512"
+    ],
 
-	"man": "README.md",
+    "man": "README.md",
 
-	"engines": {
-		"node": ">=0.10.28"
-	},
+    "engines": {
+        "node": ">=0.10.28"
+    },
 
-	"repository": {
-		"type": "git",
-		"url" :  "https://github.com/monolithed/grunt-md5sum.git"
-	},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tgandrews/grunt-anysum"
+    },
 
-	"bugs": {
-		"url": "https://github.com/monolithed/grunt-md5sum/issues"
-	},
+    "bugs": {
+        "url": "https://github.com/tgandrews/grunt-anysum"
+    },
 
-	"scripts": {
-		"test": "grunt test"
-	},
+    "scripts": {
+        "test": "grunt test"
+    },
 
-	"devDependencies": {
-		"grunt"                 : "0.4.5",
-		"grunt-contrib-clean"   : "0.6.0",
-		"grunt-contrib-nodeunit": "0.4.1"
-	},
+    "devDependencies": {
+        "grunt": "0.4.5",
+        "grunt-contrib-clean": "0.6.0",
+        "grunt-contrib-nodeunit": "0.4.1"
+    },
 
-	"licenses": [
-		{
-			"type": "MIT",
-			"url" : "http://www.opensource.org/licenses/mit-license.php"
-		}
-	]
+    "licenses": [{
+        "type": "MIT",
+        "url": "http://www.opensource.org/licenses/mit-license.php"
+    }]
 }
